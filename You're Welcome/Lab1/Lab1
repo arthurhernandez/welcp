@@ -1,0 +1,121 @@
+R1.7
+The program will print the following:
+39 + 3
+42
+
+R1.8
+The program will print the following:
+HelloWorld
+
+R1.9
+The error in the code is from the comma that is inside of the print statement. The comma could
+be replaced with a '+' and then the code would compile.
+
+E1.8
+public class Face {
+	public static void main(String[] args) {
+ 
+	System.out.println(" /////// ");
+	System.out.println(" +-----+");
+	System.out.println("(| o o |)");
+	System.out.println(" |  >  |");
+	System.out.println(" |  0  |");
+	System.out.println(" +-----+");
+ 
+	// ///////
+	// +-----+
+	//(| o o |)
+	// |  >  |
+	// |  0  |
+	// +-----+
+	}
+}
+
+E1.15
+import javax.swing.JOptionPane;
+
+public class DialogViewer
+{
+	public static void main (String[] args) 
+	{
+		JOptionPane.showMessageDialog(null, "Hello, Matthew!");
+	}
+}
+
+E1.16
+import javax.swing.JOptionPane;
+
+public class DialogViewer
+{
+	public static void main (String[] args) 
+	{
+		String name = JOptionPane.showInputDialog("What is your name?");
+		JOptionPane.showMessageDialog(null, "Hello, " + name + "!");
+	}
+}
+
+E1.17
+import javax.swing.JOptionPane;
+
+public class DialogViewer
+{
+	public static void main (String[] args) 
+	{
+		String name = JOptionPane.showInputDialog("What is your name?");
+		JOptionPane.showMessageDialog(null, "Hello, " + name + "!");
+		String discard = JOptionPane.showInputDialog("My name is Hal! What would you like me to do?");
+		JOptionPane.showMessageDialog(null, "Im sorry, " + name + ". I'm afraid I can't do that.");
+	}
+}
+E1.18
+import java.net.URL;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
+
+public class Test
+{
+	public static void main (String[] args) throws Exception
+	{
+		URL imageLocation = new URL ("https://cdn.d1baseball.com/logos/teams/256/indiana.png");
+		JOptionPane.showMessageDialog(null, "Welcome to Indiana University!", "Go Hoosiers!", JOptionPane.PLAIN_MESSAGE, new ImageIcon(imageLocation));
+	}
+}
+
+R2.5
+mystery = 0
+
+R2.6
+The error in the code comes from the last line because here is an 'int' before mystery.
+This is wrong because 'mystery' is already declared as an int earlier in the code. 
+
+import java.math.BigDecimal;
+
+public class Calculate
+{
+	public static void main(String[] args) 
+	{
+    
+	BigDecimal a, b, c, d, e;
+	a = new BigDecimal("1");
+	b = new BigDecimal("2");
+	c = new BigDecimal("3");
+	d = new BigDecimal("4");
+	e = new BigDecimal("5");
+   
+	System.out.println(a.add(b));
+	System.out.println(b.multiply(c));
+	System.out.println(a.subtract(b.subtract(c.subtract(d))));
+	System.out.println(a.subtract(b).subtract(c).subtract(d));
+	System.out.println(b.multiply(c).subtract(d.multiply(e)));
+   
+	}
+}
+
+
+
+
+
+
+
+
